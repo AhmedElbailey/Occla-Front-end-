@@ -29,6 +29,7 @@ exports.getPosts = async (req, res, next) => {
 };
 
 exports.createPost = async (req, res, next) => {
+  console.log(req.body.title);
   // check validation errors
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
